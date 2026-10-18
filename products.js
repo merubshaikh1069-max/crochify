@@ -1,0 +1,87 @@
+// Edit this file to change shop details, categories and products.
+const SITE = {
+  name: 'Crochify by Fari',
+  whatsapp: '923188107149',   // client's WhatsApp number with country code, no + or spaces
+  currency: 'Rs',
+  email: 'hello@example.com',
+  instagram: 'https://www.instagram.com/crochifybyfari?exln=N2JoMzVyNmpocG1x/',
+ whatsappChannel: 'https://whatsapp.com/channel/0029VbDbWAC5fM5U1W4MhD1V'
+};
+
+const CATEGORIES = [
+  {key: 'hair-accessories', name: 'Hair Accessories', icon: '', image: 'images/hair-accessories/crochet-bandana.jpg'},
+  {key: 'hand-accessories', name: 'Hand Accessories', icon: '', image: 'images/hand-accessories/rose-puffy-gajre.jpg' },
+  {key: 'bouquets',         name: 'Bouquets',         icon: '', image: 'images/Bouqets and Rose/red-rose2.jpg' },
+  {key: 'keychains',        name: 'Keychains',        icon: '', image: 'images/Keychains/Keychains.jpg'},
+  {key: 'mobile covers',        name: 'Mobile Covers',    icon: '', image: 'images/Mobile-Covers/mobile-cover.png'},
+  {key: 'jewellery-items',        name: 'Jewellery',    icon: '', image: 'images/Jewellery/Floral-earings.png'},
+  {key: 'bags',        name: 'Bags',    icon: '',  image: 'images/Bags/bag.jpg'},
+  {key: 'baby-wear',        name: 'Baby Wear',    icon: '',  image: 'images/Baby-Wear/baby-shoes.jpg'},
+  {key: 'toys',        name: 'Toys',    icon: '',  image: 'images/Toys/crochet-turtle.jpg'}
+
+];
+
+// SAMPLE products - replace with the client's real ones.
+// image: put photos in images/<category-key>/ and write e.g. 'images/keychains/bear.jpg'
+const PRODUCTS = [
+  {name: ' Bouquet Keychain',      category: 'keychains',     price: 500, image: 'images/Keychains/bouquet-keychain.png'},
+  {name: 'Pearl Gajre',      category: 'hand-accessories',        price: 500, image: 'images/hand-accessories/pearl-gajre.png'},
+  {name: 'Sunflower Hair Bun Stick',      category: 'hair-accessories',        price: 500, image: 'images/hair-accessories/Jura-Flower.png'},
+  {name: 'Pearl Rose Earings',      category: 'jewellery-items',        price: 500, image: 'images/Jewellery/pearl-rose-earings.png'},
+  {name: 'Bow Pouch',  category: 'bags', price: 300, image: 'images/Bags/red-bow-pouch.jpg'},
+  {name: 'Bag',  category: 'bags', price: 300, image: 'images/Bags/bag.jpg'},
+  {name: 'Quran Pak Cover With Pen Holder',  category: 'bags', price: 300, image: 'images/Bags/quran-pak-cover-pen-holder.jpg'},
+  {name: 'Flower Pouch',  category: 'bags', price: 300, image: 'images/Bags/purple-flower-pouch.jpg'},
+  {name: 'Pouch',  category: 'bags', price: 300, image: 'images/Bags/yellow-pouch-open.jpg'},
+  {name: 'Flower',   category: 'bouquets', price: 250, image: 'images/Bouqets and Rose/pink-lily.jpg'},
+  {name: 'Red Rose',   category: 'bouquets', price: 400, image: 'images/Bouqets and Rose/red-rose.jpg'},
+  {name: 'Wish Card',   category: 'bouquets', price: 350, image: 'images/Bouqets and Rose/wish-card.jpg'},
+  {name: 'Bouquet',       category: 'bouquets',   price: 1500, image: 'images/Bouqets and Rose/bouquet.png'},
+  {name: 'Crochet Bandana',      category: 'hair-accessories',     price: 1800, image: 'images/hair-accessories/crochet-bandana.jpg'},
+  {name: 'Clips',    category: 'hair-accessories',     price: 450, image: 'images/hair-accessories/Clips.png'},
+  {name: 'Baby Clips',      category: 'hair-accessories',    price: 500, image: 'images/hair-accessories/baby-clips.jpg'},
+  {name: 'Flower Clips',      category: 'hair-accessories',        price: 500, image: 'images/hair-accessories/flower-clips.jpg'},
+  {name: 'Bow Hair Clips',      category: 'hair-accessories',        price: 500, image: 'images/hair-accessories/bow-hair-clips.jpg'},
+  {name: 'Crochet Clips',      category: 'hair-accessories',        price: 500, image: 'images/hair-accessories/crochet-clips.png'},
+  {name: 'Flower Braid',      category: 'hair-accessories',        price: 500, image: 'images/hair-accessories/flower-braid.png'},
+  {name: 'Rose Braid',      category: 'hair-accessories',        price: 500, image: 'images/hair-accessories/rose-braid.png'},
+  {name: 'Hijab Pins',      category: 'hair-accessories',        price: 500, image: 'images/hair-accessories/hijab-pins.png'},
+  {name: 'Crochet Puffy Gajre',      category: 'hand-accessories',        price: 500, image: 'images/hand-accessories/rose-puffy-gajre.jpg'},
+  {name: 'Crochet Watch',      category: 'hand-accessories',        price: 500, image: 'images/hand-accessories/crochet-watch.png'},
+  {name: 'Crochet Bangles',      category: 'hand-accessories',        price: 500, image: 'images/hand-accessories/crochet-bangles.jpg'},
+  {name: 'Jasmine Gajre',      category: 'hand-accessories',        price: 500, image: 'images/hand-accessories/rose-jasmine-gajre.png'},
+  {name: 'Rose Jasmine Gajre',      category: 'hand-accessories',        price: 500, image: 'images/hand-accessories/rose-jasmine-gajre.jpg'},
+  {name: 'Jasmine Flower Gajre',      category: 'hand-accessories',        price: 500, image: 'images/hand-accessories/jasmine-flower-gajre.jpg'},
+  {name: 'Flower Gajre',      category: 'hand-accessories',        price: 500, image: 'images/hand-accessories/flower-gajre.jpg'},
+  {name: 'Crochet Baby Bangles',      category: 'hand-accessories',        price: 500, image: 'images/hand-accessories/crochet-baby-bangles.jpg'},
+  {name: 'Crochet Baby Gajre',      category: 'hand-accessories',        price: 500, image: 'images/hand-accessories/baby-gajre.jpg'},
+  {name: 'Floral Earings',      category: 'jewellery-items',        price: 500, image: 'images/Jewellery/Floral-earings.png'},
+  {name: 'Rose Set',      category: 'jewellery-items',        price: 500, image: 'images/Jewellery/rose-set.png'},
+  {name: 'Sunflower Set',      category: 'jewellery-items',        price: 500, image: 'images/Jewellery/sunflower-set.png'},
+  {name: 'Letter Keychains',      category: 'keychains',        price: 500, image: 'images/Keychains/Keychains.jpg'},
+  {name: 'Pearl Keychain',      category: 'keychains',        price: 500, image: 'images/Keychains/pearl-keychain.jpg'},
+  {name: 'Cherry Keychain',      category: 'keychains',        price: 500, image: 'images/Keychains/cherry-keychain.jpg'},
+  {name: 'Jellyfish Keychain',      category: 'keychains',     price: 500, image: 'images/Keychains/jellyfish-keychain.jpg'},
+  {name: ' Rose Bouquet Keychain',      category: 'keychains',     price: 500, image: 'images/Keychains/rose-bouquet-keychain.png'},
+  {name: 'Lipstick Holder Keychain',      category: 'keychains',        price: 500, image: 'images/Keychains/lipbalm-holder-keychain.jpg'},
+  {name: 'Spider Keychains',      category: 'keychains',        price: 500, image: 'images/Keychains/spider-keychains.jpg'},
+  {name: 'Tulip Bouquet Keychain',      category: 'keychains',        price: 500, image: 'images/Keychains/tulip-bouquet-keychain.jpg'},
+  {name: 'Swirl Roll Keychain',      category: 'keychains',        price: 500, image: 'images/Keychains/swirl-roll-keychain.jpg'},
+  {name: 'Pink Bow Keychain',      category: 'keychains',        price: 500, image: 'images/Keychains/pink-bow-keychain.jpg'},
+  {name: 'Sunflower Bouquet Keychain',      category: 'keychains',        price: 500, image: 'images/Keychains/sunflower-bouquet-keychain.jpg'},
+  {name: 'Purple Bow Pearl Keychain',      category: 'keychains',        price: 500, image: 'images/Keychains/purple-bow-pearl-keychain.jpg'},
+  {name: 'Red Flower Pearl Keychain',      category: 'keychains',        price: 500, image: 'images/Keychains/red-flower-pearl-keychain.jpg'},
+  {name: 'Strawberry Keychain',      category: 'keychains',        price: 500, image: 'images/Keychains/strawberry-keychain.jpg'},
+  {name: 'Crochet Mobile Cover',      category: 'mobile covers',        price: 500, image: 'images/Mobile-Covers/mobile-cover.png'},
+  {name: 'Crochet Mobile Cover',      category: 'mobile covers',        price: 500, image: 'images/Mobile-Covers/phone-case.png'},
+  {name: 'Crochet Mobile Cover',      category: 'mobile covers',        price: 500, image: 'images/Mobile-Covers/white-bow-cover.jpg'},
+  {name: 'Crochet Mobile Cover',      category: 'mobile covers',        price: 500, image: 'images/Mobile-Covers/crochet-mobile-cover.jpg'},
+  {name: 'Crochet Baby Shoes',      category: 'baby-wear',        price: 500, image: 'images/Baby-Wear/baby-shoes.jpg'},
+  {name: 'Crochet Baby Pinafore Dress',      category: 'baby-wear',        price: 500, image: 'images/Baby-Wear/baby-pinafore-dress.jpg'},
+  {name: 'Crochet Baby Romper',      category: 'baby-wear',        price: 500, image: 'images/Baby-Wear/baby-romper.jpg'},
+  {name: 'Crochet Baby Set',      category: 'baby-wear',        price: 500, image: 'images/Baby-Wear/baby-set-blue.jpg'},
+  {name: 'Crochet Turtle',      category: 'toys',        price: 500, image: 'images/Toys/crochet-turtle.jpg'},
+  {name: 'Crochet Capybara Turtle',      category: 'toys',        price: 500, image: 'images/Toys/capybara-turtle.jpg'},
+  {name: 'Crochet Capybar Turtle Backpack',      category: 'toys',        price: 500, image: 'images/Toys/capybara-turtle-backpack.jpg'},
+
+];
